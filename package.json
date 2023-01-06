@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx tsc && node ./build/webscrape-r2w.js"
+    "start": "npx tsc && node ./build/webscrape-r2w.js",
+    "strava": "npx tsc && node ./build/webscrape-strava.js"
   },
   "author": "",
   "license": "ISC",

@@ -10,7 +10,7 @@ enum Distance {
     Miles, Meters, Yards, Kilometers,
 }
 
-interface Run {
+export interface Run {
     distanceUnit: Distance,
     distance: number,
     timeHours?: number,
@@ -200,7 +200,7 @@ const webscrape = async () => {
     const runs = await scrapeLogs(page);
     const data = JSON.stringify(runs);
 
-    fs.writeFile('result.json', data, (err) => {
+    fs.writeFile('webscrape-r2w.json', data, (err) => {
         if (err) {
             throw err;
         }

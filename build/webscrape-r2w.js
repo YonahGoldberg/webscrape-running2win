@@ -2,8 +2,8 @@ import puppeteer from 'puppeteer';
 import fs from 'fs';
 const openBrowser = false;
 const closeBrowser = true;
-const username = "yonahg";
-const password = "Whirlp00l";
+const username = "";
+const password = "";
 var Distance;
 (function (Distance) {
     Distance[Distance["Miles"] = 0] = "Miles";
@@ -163,7 +163,7 @@ const webscrape = async () => {
     await navigateToLog(page);
     const runs = await scrapeLogs(page);
     const data = JSON.stringify(runs);
-    fs.writeFile('result.json', data, (err) => {
+    fs.writeFile('webscrape-r2w.json', data, (err) => {
         if (err) {
             throw err;
         }
